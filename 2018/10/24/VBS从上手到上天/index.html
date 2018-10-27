@@ -16,7 +16,7 @@
 <meta property="og:description" content="本人的VBScript学习之路是一半自己学（看大佬的教程）一半被大佬带的，踩过的的坑数不胜数，so，就在这里做一个简单的VBScript教程吧！（配合大佬的VBS从入门到入土以及我踩过所有坑的集合(报错辞典)一起食用效果更佳）我的比较容易理解，大佬的更加专业。持续更新~">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1540399227237&di=e9618fddc77f59832e188534d1a5b3da&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201707%2F01%2F20170701201120_WZcAF.jpeg">
-<meta property="og:updated_time" content="2018-10-27T04:54:19.741Z">
+<meta property="og:updated_time" content="2018-10-27T04:56:17.095Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VBS从上手到上天">
 <meta name="twitter:description" content="本人的VBScript学习之路是一半自己学（看大佬的教程）一半被大佬带的，踩过的的坑数不胜数，so，就在这里做一个简单的VBScript教程吧！（配合大佬的VBS从入门到入土以及我踩过所有坑的集合(报错辞典)一起食用效果更佳）我的比较容易理解，大佬的更加专业。持续更新~">
@@ -118,23 +118,23 @@
 <blockquote>
 <p>变量：</p>
 </blockquote>
-<p>到了现在，VBS的编程就开始变得有趣起来了。所以要好好学习一下变量！（即使并不是很难，但是理解上可能会有点慢，要有耐心）<br>以下是一个超级简单的例子，大家可以想一想这个程序运行后会发生什么<br><code>dim a
-a=&quot;just like this&quot;
-msgbox a</code><br>效果就是输出了<code>just like this</code><br><code>dim a</code>就是设了变量<code>a</code>  顺便提一句，如果要一次设多个变量，就<code>dim a,b,c</code><br>而<code>a=&quot;just like this&quot;</code>就是让<code>a</code>的值等于等号后的东东（无论是数字还是文字还是什么乱七八糟的）<br>然后由<code>msgbox</code>来输出这个值<br>大家可能会想这个变量<del>tmd有个diao用</del>到底有什么用呢<br>别急，继续往下看<br><strong>变量的类型（一个小难点）</strong><br>1.数字类型<br><code>dim a
-a=1</code><br>很好理解，因为<code>a</code>的值是一个数字，所以这便是数字类型<br>2.字符串类型<br><code>dim a
+<p>到了现在，VBS的编程就开始变得有趣起来了。所以要好好学习一下变量！（即使并不是很难，但是理解上可能会有点慢，要有耐心）<br>以下是一个超级简单的例子，大家可以想一想这个程序运行后会发生什么<br><code>dim a  
+a=&quot;just like this&quot;  
+msgbox a</code><br>效果就是输出了<code>just like this</code><br><code>dim a</code>就是设了变量<code>a</code>  顺便提一句，如果要一次设多个变量，就<code>dim a,b,c</code><br>而<code>a=&quot;just like this&quot;</code>就是让<code>a</code>的值等于等号后的东东（无论是数字还是文字还是什么乱七八糟的）<br>然后由<code>msgbox</code>来输出这个值<br>大家可能会想这个变量<del>tmd有个diao用</del>到底有什么用呢<br>别急，继续往下看<br><strong>变量的类型（一个小难点）</strong><br>1.数字类型<br><code>dim a  
+a=1</code><br>很好理解，因为<code>a</code>的值是一个数字，所以这便是数字类型<br>2.字符串类型<br><code>dim a  
 a=&quot;ABCDEFG&quot;</code><br>如图，我们可以简单的理解为它的值是由许多字符组成的。</p>
-<p>那么这两个类型有什么区别呢，请看下列程序：<br><code>dim a,b,c,d
-a=1
-b=2
-c=&quot;jack&quot;
-d=&quot;max&quot;
-msgbox a+c
-msgbox b+d</code><br>大家觉得运行成果会是怎么样呢？提示栏显示 <code>1jack</code> ？不不不，系统会报错<br>因为字符和数字不是一个东西，<strong>务必用 &amp; 连接</strong>，如下<br><code>dim a,b,c,d
-a=1
-b=2
-c=&quot;jack&quot;
-d=&quot;max&quot;
-msgbox a&amp;&quot;+&quot;&amp;c
+<p>那么这两个类型有什么区别呢，请看下列程序：<br><code>dim a,b,c,d   
+a=1  
+b=2  
+c=&quot;jack&quot;  
+d=&quot;max&quot;  
+msgbox a+c  
+msgbox b+d</code><br>大家觉得运行成果会是怎么样呢？提示栏显示 <code>1jack</code> ？不不不，系统会报错<br>因为字符和数字不是一个东西，<strong>务必用 &amp; 连接</strong>，如下<br><code>dim a,b,c,d  
+a=1  
+b=2  
+c=&quot;jack&quot;  
+d=&quot;max&quot;  
+msgbox a&amp;&quot;+&quot;&amp;c  
 msgbox b&amp;&quot;+&quot;&amp;d</code></p>
 <hr>
 <blockquote>
