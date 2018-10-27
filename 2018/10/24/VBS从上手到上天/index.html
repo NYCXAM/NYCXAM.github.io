@@ -16,7 +16,7 @@
 <meta property="og:description" content="本人的VBScript学习之路是一半自己学（看大佬的教程）一半被大佬带的，踩过的的坑数不胜数，so，就在这里做一个简单的VBScript教程吧！（配合大佬的VBS从入门到入土以及我踩过所有坑的集合(报错辞典)一起食用效果更佳）我的比较容易理解，大佬的更加专业。持续更新~">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1540399227237&di=e9618fddc77f59832e188534d1a5b3da&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201707%2F01%2F20170701201120_WZcAF.jpeg">
-<meta property="og:updated_time" content="2018-10-27T08:32:16.256Z">
+<meta property="og:updated_time" content="2018-10-27T08:35:24.487Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VBS从上手到上天">
 <meta name="twitter:description" content="本人的VBScript学习之路是一半自己学（看大佬的教程）一半被大佬带的，踩过的的坑数不胜数，so，就在这里做一个简单的VBScript教程吧！（配合大佬的VBS从入门到入土以及我踩过所有坑的集合(报错辞典)一起食用效果更佳）我的比较容易理解，大佬的更加专业。持续更新~">
@@ -102,44 +102,44 @@
 </thead>
 <tbody>
 <tr>
-<td>     - [ ]</td>
+<td>     -[ ]</td>
 <td>小学英语基础  </td>
 </tr>
 <tr>
-<td>     - [ ]</td>
+<td>     -[ ]</td>
 <td>有耐心，敢于尝试  </td>
 </tr>
 <tr>
-<td>     - [ ]</td>
+<td>     -[ ]</td>
 <td>win系统 (Mac/Linux不知道是否可行)  </td>
 </tr>
 <tr>
-<td>     - [ ]</td>
+<td>     -[ ]</td>
 <td>有记忆力  </td>
 </tr>
 <tr>
-<td>     - [ ]</td>
+<td>     -[ ]</td>
 <td>系统报错先自行检查  参考(报错辞典)  </td>
 </tr>
 <tr>
-<td>     - [ ]</td>
+<td>     -[ ]</td>
 <td>作者QQ：2871934345 有问题来问，备注写编程  </td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>Than，let’s start!  </p>
+<p>Then，let’s start!  </p>
 </blockquote>
 <h2 id="要写VBS程序，就得先建出VBS文件，如下："><a href="#要写VBS程序，就得先建出VBS文件，如下：" class="headerlink" title="要写VBS程序，就得先建出VBS文件，如下："></a>要写VBS程序，就得先建出VBS文件，如下：</h2><p>1.在“开始”栏的“所有程序”中搜索记事本（只要是打开记事本，什么方法都行）<br>2.在上面输入<code>msgbox&quot;hello world!&quot;</code><br>3.保存（<em>保存</em>到<strong>桌面</strong>，<em>后缀</em>（文件名后的）改为 <strong>.vbs</strong> “<em>保存类型</em>“选<strong>所有文件</strong>)<br>4.点击运行，就会跳出提示栏显示 ‘hello world！’  </p>
 <blockquote>
 <p>由于我认为你们绝对没看“报错辞典”所以先说<br>所有的编程中涉及的符号 务必 务必 务必用英文输入法输入！！！  </p>
 </blockquote>
-<h2 id="输出"><a href="#输出" class="headerlink" title="输出:"></a>输出:</h2><p>没错，这就是一个最简单的输出命令，格式为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">msgbox&quot;输出的内容&quot;``` </span><br><span class="line"></span><br><span class="line">用人类语言来说，就是让电脑输出 &quot;  &quot; 中的内容  </span><br><span class="line">顺带说一句，&quot;msgbox&quot;只要不拼错，大小写是没关系的，本人为了方便习惯小写  </span><br><span class="line">那么，如果要在一个`msgbox`中让文字分行输出该怎么做呢？(这算是一个小技巧)</span><br></pre></td></tr></table></figure></p>
-<p>msgbox”就是”+chr(13)+”这样”<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">这里的`chr(13)`就起到了换行的作用，运用时请用 + 加号连接，简单来说就是因为输出内容和chr不是一个东西，所以使用时要用加号连在一起才行  </span><br><span class="line"></span><br><span class="line">## 变量：  </span><br><span class="line"></span><br><span class="line">到了现在，VBS的编程就开始变得有趣起来了。所以要好好学习一下变量！（即使并不是很难，但是理解上可能会有点慢，要有耐心）  </span><br><span class="line">以下是一个超级简单的例子，大家可以想一想这个程序运行后会发生什么  </span><br><span class="line">```  </span><br><span class="line">dim a  </span><br><span class="line">a=&quot;just like this&quot;  </span><br><span class="line">msgbox a```  </span><br><span class="line"></span><br><span class="line">效果就是输出了`just like this`  </span><br><span class="line">`dim a`就是设了变量`a`  顺便提一句，如果要一次设多个变量，就`dim a,b,c`</span><br><span class="line">而`a=&quot;just like this&quot;`就是让`a`的值等于等号后的东东（无论是数字还是文字还是什么乱七八糟的）</span><br><span class="line">然后由`msgbox`来输出这个值</span><br><span class="line">大家可能会想这个变量~~tmd有个diao用~~到底有什么用呢</span><br><span class="line">别急，继续往下看</span><br><span class="line">**变量的类型（一个小难点）**</span><br><span class="line">1.数字类型</span><br></pre></td></tr></table></figure></p>
-<p>dim a<br>a=1<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">很好理解，因为`a`的值是一个数字，所以这便是数字类型</span><br><span class="line">2.字符串类型</span><br></pre></td></tr></table></figure></p>
-<p>dim a<br>a=”ABCDEFG”<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">如图，我们可以简单的理解为它的值是由许多字符组成的。</span><br><span class="line"></span><br><span class="line">那么这两个类型有什么区别呢，请看下列程序：</span><br></pre></td></tr></table></figure></p>
-<p>dim a,b,c,d<br>a=1<br>b=2<br>c=”jack”<br>d=”max”<br>msgbox a+c<br>msgbox b+d<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">大家觉得运行成果会是怎么样呢？提示栏显示 `1jack` ？不不不，系统会报错</span><br><span class="line">因为字符和数字不是一个东西，**务必用 &amp; 连接**，如下</span><br></pre></td></tr></table></figure></p>
-<p>dim a,b,c,d<br>a=1<br>b=2<br>c=”jack”<br>d=”max”<br>msgbox a&amp;”+”&amp;c<br>msgbox b&amp;”+”&amp;d<code>`</code></p>
+<h2 id="输出"><a href="#输出" class="headerlink" title="输出:"></a>输出:</h2><p>没错，这就是一个最简单的输出命令，格式为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">msgbox&quot;输出的内容&quot;</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">用人类语言来说，就是让电脑输出 &quot;  &quot; 中的内容  </span><br><span class="line">顺带说一句，&quot;msgbox&quot;只要不拼错，大小写是没关系的，本人为了方便习惯小写  </span><br><span class="line">那么，如果要在一个`msgbox`中让文字分行输出该怎么做呢？(这算是一个小技巧)</span><br></pre></td></tr></table></figure></p>
+<p>msgbox”就是”+chr(13)+”这样”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">这里的`chr(13)`就起到了换行的作用，运用时请用 + 加号连接，简单来说就是因为输出内容和chr不是一个东西，所以使用时要用加号连在一起才行  </span><br><span class="line"></span><br><span class="line">## 变量：  </span><br><span class="line"></span><br><span class="line">到了现在，VBS的编程就开始变得有趣起来了。所以要好好学习一下变量！（即使并不是很难，但是理解上可能会有点慢，要有耐心）  </span><br><span class="line">以下是一个超级简单的例子，大家可以想一想这个程序运行后会发生什么  </span><br><span class="line">```  </span><br><span class="line">dim a  </span><br><span class="line">a=&quot;just like this&quot;  </span><br><span class="line">msgbox a</span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">效果就是输出了`just like this`  </span><br><span class="line">`dim a`就是设了变量`a`  顺便提一句，如果要一次设多个变量，就`dim a,b,c`</span><br><span class="line">而`a=&quot;just like this&quot;`就是让`a`的值等于等号后的东东（无论是数字还是文字还是什么乱七八糟的）</span><br><span class="line">然后由`msgbox`来输出这个值</span><br><span class="line">大家可能会想这个变量~~tmd有个diao用~~到底有什么用呢</span><br><span class="line">别急，继续往下看</span><br><span class="line">**变量的类型（一个小难点）**</span><br><span class="line">1.数字类型</span><br></pre></td></tr></table></figure></p>
+<p>dim a<br>a=1<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">很好理解，因为`a`的值是一个数字，所以这便是数字类型</span><br><span class="line">2.字符串类型</span><br></pre></td></tr></table></figure></p>
+<p>dim a<br>a=”ABCDEFG”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">如图，我们可以简单的理解为它的值是由许多字符组成的。</span><br><span class="line"></span><br><span class="line">那么这两个类型有什么区别呢，请看下列程序：</span><br></pre></td></tr></table></figure></p>
+<p>dim a,b,c,d<br>a=1<br>b=2<br>c=”jack”<br>d=”max”<br>msgbox a+c<br>msgbox b+d<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">大家觉得运行成果会是怎么样呢？提示栏显示 `1jack` ？不不不，系统会报错</span><br><span class="line">因为字符和数字不是一个东西，**务必用 &amp; 连接**，如下</span><br></pre></td></tr></table></figure></p>
+<p>dim a,b,c,d<br>a=1<br>b=2<br>c=”jack”<br>d=”max”<br>d=”max”<br>msgbox a&amp;”+”&amp;c<br>msgbox b&amp;”+”&amp;d<br><code>`</code></p>
 <hr>
 <blockquote>
 <p>==持续更新==</p>
